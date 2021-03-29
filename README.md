@@ -248,6 +248,43 @@ solve 메소드에 반환된 최근접 점들 사이의 거리(d)가 출력된�
 
 
 
+책에서는 x좌표의 오름차순으로 정렬된 배열의 점의 개수만을 입력하라고 한다. 이렇게 하기 위해서는 Scanner를 이용하지 않고 난수를 생성하는 Random클래스를 이용한다. 다만, 난수를 생성하다 보니까 수의 분포 범위가 너무 커서 오류가 날때도 있다. 이는 보완해야 하는 부분이다. 
+
+
+
+## random 클래스를 사용하는 경우
+
+
+![image-20210329224827101](C:\Users\kshlj\my-awesome-site\_posts\image-20210329224827101.png)
+
+Random 클래스를 사용하기위해 java.util.Random을 추가해준다.
+
+
+
+
+![image-20210330002335275](C:\Users\kshlj\AppData\Roaming\Typora\typora-user-images\image-20210330002335275.png)
+
+입력받는 점의 개수를 지정해야 하므로 입력받는 점의 개수를 cnt로 지정한다. x좌표와 y좌표를 나타내기위해 2차원배열을 만들고 (x,y)가 cnt개 존재하도록 2차원 배열s를
+
+[cnt][2]로 지정한다.
+
+
+
+![image-20210330003128485](C:\Users\kshlj\AppData\Roaming\Typora\typora-user-images\image-20210330003128485.png)
+
+
+main함수에서 우선 Random클래스를 선언해서 난수를 생성하고 이전에 입력한 점의 개수 cnt번째의 배열까지 난수를 대입하는 for문을 만들어준다. 결과값이 너무 크게 나오지 않게 하기 위해 난수의 범위는 1~1000으로 지정한다(error 방지). 비교함수 compare를 통해 나온 값을 x좌표 기준으로 오름차순으로 정렬해주고, solve(0,cnt)로 최근접 점의 쌍 거리를 구힌다.
+
+
+## random 클래스를 사용한 코드 실행결과
+
+
+![](https://postfiles.pstatic.net/MjAyMTAzMzBfMjE5/MDAxNjE3MDMzMjE0MTAz.dxXoDOH9EFvwt_NRw6gr9ONu0DNYjfCec_goAsSYTjQg.NEl5dz3CBZ2fkqatMdsAuEjLEaZJyp3NKEc9Km5P4bwg.PNG.codnjs060/image.png?type=w773)
+
+랜덤으로 생성한 295개의 점들 중에서 최근접 점의 거리가 출력된다.
+
+
+
 
 
 
