@@ -218,13 +218,10 @@ int lenth = end - start; 가 의미 하는 바는 점의 개수 이다. 점이 2
 
 ![](https://postfiles.pstatic.net/MjAyMTAzMjlfMiAg/MDAxNjE3MDI0Nzk2MDgy.2aQj3BW6qGAE91PbRVHcDoSYplQ0aCHMjdi4_QeKjJAg.Pl4UuMUhD7MpVUzZU-JMDd8HYcCy9QbqcXJhF4jKyw8g.PNG.codnjs060/image.png?type=w773)
 
-y좌표를 기준으로 정렬했기 때문에 y좌표의 차이가 d보다 크다면 이 부분해는 무의미 하기 때문에 break문을 사용하여 조건문을 탈출한다.
-
-만약 왼쪽 부분과 오른쪽 부분에서 구한 부분해가  중간 부분의 부분해보다 작다면, 왼쪽부분의 부분해와 오른쪽 부분의 부분해를 비교 해야 하기 때문에 조건문을 계속 이어가야한다.
-
-만약 각 부분의 부분해가 중간 부분에서 구한 부분해보다  크거나 같아도 조건문을 계속 이어나간다.
-
-이때, 각 부분해 중에서 가장 작은 값을 d라고 하고 이걸 호출부로 반환한다. d는 최근접 점 간의 거리이다.
+중간에 걸치는 점들을 y좌표로 정렬했기 때문에 이제 하나씩 순서대로 비교한다. 각 두 점의 Y좌표의 차이가 d보다 크면 어차피 거리도 크기때문에
+break문으로 탈출한다. 그리고 d보다 작아도 두 점이 둘 다 midx보다 작거나(왼쪽면) , midx보다 크면(오른쪽면)
+이미 재귀함수 호출할 때 처리하였기에 고려 할 필요가 없어 continue문으로 되돌아 간다.
+이 세 조건문을 모두 통과하면 비로소 두 점과 앞에서 구했던 d 중에서 다시 한 번 최솟값을 구한다
 
 
 ## main 메소드
