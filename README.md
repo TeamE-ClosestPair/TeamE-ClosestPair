@@ -4,7 +4,10 @@
 최근접 점의 쌍을 찾는 문제는 n개의 점이 있다고 가정 할 때, 서로 다른 점 n개를 2개씩 짝지어서
 구하는 방법과 분할 정복으로 문제를 풀 수 있다. 전자의 경우, 시간 복잡도가 O(n^2)로 n이 커질수록
 시간 복잡도가 기하 급수적으로 증가하지만 분할 정복 방식으로 문제를 해결하면 시간 복잡도는 O(nlog^2n)
-이다. 이 문제를 풀기 위해서는 분할 정복을 이용하는 편이 효율적이다. 
+이다. 따라서 이 문제를 풀기 위해서는 분할 정복을 이용하는 편이 효율적이다. 
+
+해당 알고리즘은 다양한 곳에서 활용되는데 컴퓨터 그래픽스, 컴퓨터 비전, 지리정보시스템, 분자 모델링, 항공 트래픽 제어 등의 분야에서 사용된다.
+
 
 
 따라서 TeamE가 작성한 코드는 다음과 같다.
@@ -200,7 +203,9 @@ int lenth = end - start; 가 의미 하는 바는 점의 개수 이다. 점이 2
 
 
 ![](https://postfiles.pstatic.net/MjAyMTAzMjlfMjk0/MDAxNjE3MDI3NjY0Nzg3.voOAY0b2xnAje3Dz_l0DU--PTChSxy715zejewKLSGQg.lnkEr3VkXS14Osz7g8fQkTAb3-6Ae22vjZgMcdKLWqMg.PNG.codnjs060/image.png?type=w773)
-편의 상 분할된 배열을 왼쪽 부분과 오른쪽 부분이라 하자. 만약 최근접 점의 쌍이 왼쪽 부분의 가장 오른쪽에 있는 점과 오른쪽 부분의 가장 왼쪽 점의 쌍인 경우를 고려해야한다.
+편의 상 분할된 배열을 왼쪽 부분과 오른쪽 부분이라 하자. 아래 사진과 같이 최근접 점의 쌍이 왼쪽 부분의 가장 오른쪽에 있는 점과 오른쪽 부분의 가장 왼쪽 점의 쌍인 경우를 고려해야한다.
+
+![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fhygenie-studynote.tistory.com%2F46&psig=AOvVaw0PT17du9O9eGJjKw0wdpbY&ust=1617117697835000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjFk4nn1e8CFQAAAAAdAAAAABAD)
 
 따라서 중간에 걸치는 점들의 새로운 ArrayList를 만들고 이에 해당하는 점들의 길이가 위에서 선언한 d보다 작거나 같은 경우 ArrayList에 추가한다.
 
@@ -234,3 +239,7 @@ solve 메소드에 반환된 최근접 점들 사이의 거리(d)가 출력된�
 
 
 
+<출처> 
+최근접 점의 쌍, 양성봉, 생능 출판, 2013, 74~83
+
+사진 ClosestPair of Points <https://hygenie-studynote.tistory.com/46>(2021-03-30)
