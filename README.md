@@ -208,7 +208,7 @@ int lenth = end - start; 가 의미 하는 바는 점의 개수 이다. 점이 2
 
 편의 상 분할된 배열을 왼쪽 부분과 오른쪽 부분이라 하자. 아래 사진과 같이 최근접 점의 쌍이 왼쪽 부분의 가장 오른쪽에 있는 점과 오른쪽 부분의 가장 왼쪽 점의 쌍인 경우를 고려해야한다.
 
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fhygenie-studynote.tistory.com%2F46&psig=AOvVaw0PT17du9O9eGJjKw0wdpbY&ust=1617117697835000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjFk4nn1e8CFQAAAAAdAAAAABAD)
+![](https://blog.kakaocdn.net/dn/shVbt/btqLvgdjn73/GOOMAy3WVA2CUr2bqR6r8K/img.png)
 따라서 중간에 걸치는 점들의 새로운 ArrayList를 만들고 이에 해당하는 점들의 길이가 위에서 선언한 d보다 작거나 같은 경우 ArrayList에 추가한다.
 알고리즘의 전처리(processing) 과정으로서 점을 x좌표로 정렬하여 배열의 중간 인덱스를 계산하여 분할하면 되지만 중간 영역에 있는 점들은 y좌표를 기준으로 배열한 후에 위에서 아래로(혹은 아래에서 위로) 각 점을 기준으로 거리가 d 이내인 주변의 점들 사이의 거리를 각각 계산해야 하기 때문에 Override가 comparator 인터페이스를 사용해서 y좌표로 정렬하였다.
 
