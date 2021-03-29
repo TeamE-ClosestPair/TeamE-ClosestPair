@@ -215,15 +215,12 @@ int lenth = end - start; 가 의미 하는 바는 점의 개수 이다. 점이 2
 
 
 
-## 각 부분해 중에서 가장 작은 값 찾기
+## 중간지점 고려해서 가장 작은 값 찾기
 
 
 ![](https://postfiles.pstatic.net/MjAyMTAzMjlfMiAg/MDAxNjE3MDI0Nzk2MDgy.2aQj3BW6qGAE91PbRVHcDoSYplQ0aCHMjdi4_QeKjJAg.Pl4UuMUhD7MpVUzZU-JMDd8HYcCy9QbqcXJhF4jKyw8g.PNG.codnjs060/image.png?type=w773)
 
-중간에 걸치는 점들을 y좌표로 정렬했기 때문에 이제 하나씩 순서대로 비교한다. 각 두 점의 Y좌표의 차이가 d보다 크면 어차피 거리도 크기때문에
-break문으로 탈출한다. 그리고 d보다 작아도 두 점이 둘 다 midx보다 작거나(왼쪽면) , midx보다 크면(오른쪽면)
-이미 재귀함수 호출할 때 처리하였기에 고려 할 필요가 없어 continue문으로 되돌아 간다.
-이 세 조건문을 모두 통과하면 비로소 두 점과 앞에서 구했던 d 중에서 다시 한 번 최솟값을 구한다
+중간에 걸치는 점들을 y좌표로 정렬했기 때문에 이제 하나씩 순서대로 비교한다. 각 두 점의 Y좌표의 차이가 d보다 크면 어차피 거리도 크기때문에 break문으로 탈출한다. 그리고 d보다 작아도 두 점이 둘 다 midx보다 작거나(왼쪽면) , midx보다 크면(오른쪽면)이미 재귀함수 호출할 때 처리하였기에 고려 할 필요가 없어 continue문으로 되돌아 간다. 이 세 조건문을 모두 통과하면 비로소 두 점과 앞에서 구했던 d 중에서 다시 한 번 최솟값을 구한다.
 
 
 ## main 메소드
