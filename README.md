@@ -238,10 +238,10 @@ solve 메소드에 반환된 최근접 점들 사이의 거리(d)가 출력된�
 
 
 
-##실행결과
+## 실행결과
+
 
 ![](https://blogfiles.pstatic.net/MjAyMTAzMzBfMTM1/MDAxNjE3MDMyMTcxODY0.N7MTyaNvLf09WPYL2iO65CRj2RnSSbqh_zDm5YlKmI0g.X0xDS1cz16NZnHXGYy81f2BWILRPwcCV7ITISCS8TGkg.PNG.codnjs060/image.png)
-
 
 앞서 작성한 코드를 실행 하면 위와 같은 결과로 출력된다. 
 
