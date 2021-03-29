@@ -172,11 +172,7 @@ public class Task {
 
 ![](https://postfiles.pstatic.net/MjAyMTAzMjlfNDAg/MDAxNjE3MDI0NjQ3Nzcz.OYQCZNmUNPPljwnU24rscfBj_JjcLKyBDMaEVLdx5Y4g.JnFqVQR3rYHZ6BULyXd_P3Rz3aJ4fy_IEBy680TVz3Ig.PNG.codnjs060/image.png?type=w773)
 
-두 점 사이의 거리를 구하기 위해 dist 메소드를 이용한다. 두 점 사이의 거리를 구하는 공식은 아래 그림을 이용하였다.
-
-![](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fdbscthumb-phinf.pstatic.net%2F4353_000_1%2F20160404162626424_67IF8YTCE.png%2Fcd5_m37_3_clear.png%3Ftype%3Dw690_fst%26wm%3DN%22&twidth=726.16&theight=429.2&opts=17&sharpen=true)
-
-먼저 (x1-x2)와 (y7-y2)를 거듭 제곱 하기 위해서 Math.pow함수를 이용하고, 제곱근을 의미하는 Math.sqrt를 이용하여 두 점 사이의 거리를 구한다.
+두점 사이의 거리를 구하는 공식을 사용하여 dist메소드를 만들었다. (x1-x2)와 (y7-y2)를 거듭 제곱 하기 위해서 Math.pow함수를 이용하고, 제곱근을 의미하는 Math.sqrt를 이용하여 두 점 사이의 거리를 구한다.
 이때, dist의 자료형은 제곱근의 해를 구하기 위해 크기가 8바이트이고 실수형인 double로 한다.
 
 
@@ -204,8 +200,8 @@ int lenth = end - start; 가 의미 하는 바는 점의 개수 이다. 점이 2
 
 따라서 중간에 걸치는 점들의 새로운 ArrayList를 만들고 이에 해당하는 점들의 길이가 위에서 선언한 d보다 작거나 같은 경우 ArrayList에 추가한다.
 
-중간 영역에 속하는 점들 중에서 최근접 쌍을 찾기 위해 중간 영역에 있는 점들을 y좌표를 기준으로 배열한다.
-기존에는 **수정 필요** 
+알고리즘의 전처리(processing) 과정으로서 점을 x좌표로 정렬하여 배열의 중간 인덱스를 계산하여 분할하면 되지만 중간 영역에 있는 점들은 y좌표를 기준으로 배열한 후에 위에서 아래로(혹은 아래에서 위로) 각 점을 기준으로 거리가 d 이내인 주변의 점들 사이의 거리를 각각 계산해야 하기 때문에 Override문법을 이용하여 y좌표로 정렬하는 인터페이스를 구현한다.
+
 
 
 
