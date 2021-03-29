@@ -263,6 +263,7 @@ Random 클래스를 사용하기위해 java.util.Random을 추가해준다.
 
 
 ![](https://postfiles.pstatic.net/MjAyMTAzMzBfMTM5/MDAxNjE3MDMzNTk4NDIx.o4WkmCfMffBuFftuLK16Qm_mOlwQAOpgXvPx7s2-b2og.vyvOPnDbfVrj1sV92THRqhhniIzSmTCm_km6Owp5lgEg.PNG.codnjs060/image.png?type=w773)
+
 입력받는 점의 개수를 지정해야 하므로 입력받는 점의 개수를 cnt로 지정한다. x좌표와 y좌표를 나타내기위해 2차원배열을 만들고 (x,y)가 cnt개 존재하도록 2차원 배열s를 [cnt][2]로 지정한다.
 
 
