@@ -205,6 +205,7 @@ int lenth = end - start; 가 의미 하는 바는 점의 개수 이다. 점이 2
 
 
 ![](https://postfiles.pstatic.net/MjAyMTAzMjlfMjk0/MDAxNjE3MDI3NjY0Nzg3.voOAY0b2xnAje3Dz_l0DU--PTChSxy715zejewKLSGQg.lnkEr3VkXS14Osz7g8fQkTAb3-6Ae22vjZgMcdKLWqMg.PNG.codnjs060/image.png?type=w773)
+
 편의 상 분할된 배열을 왼쪽 부분과 오른쪽 부분이라 하자. 아래 사진과 같이 최근접 점의 쌍이 왼쪽 부분의 가장 오른쪽에 있는 점과 오른쪽 부분의 가장 왼쪽 점의 쌍인 경우를 고려해야한다.
 
 ![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fhygenie-studynote.tistory.com%2F46&psig=AOvVaw0PT17du9O9eGJjKw0wdpbY&ust=1617117697835000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNjFk4nn1e8CFQAAAAAdAAAAABAD)
