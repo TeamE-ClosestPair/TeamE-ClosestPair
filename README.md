@@ -235,7 +235,7 @@ solve 메소드에 반환된 최근접 점들 사이의 거리(d)가 출력된�
 
 
 
-## 실행결과
+## 입력값을 사용한 
 
 
 ![](https://blogfiles.pstatic.net/MjAyMTAzMzBfMTM1/MDAxNjE3MDMyMTcxODY0.N7MTyaNvLf09WPYL2iO65CRj2RnSSbqh_zDm5YlKmI0g.X0xDS1cz16NZnHXGYy81f2BWILRPwcCV7ITISCS8TGkg.PNG.codnjs060/image.png)
